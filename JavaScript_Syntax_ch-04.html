@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax🏏🎯Challange-04📢</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // document.write("Menu Items <br> SandWich <br> French Fries <br> Potato Wedges <br> Donuts <br> Pizza");
+
+        //Using TaggedLiteral
+        function TaggedLiteralEg(strings) {
+            document.write(strings);
+        }
+        TaggedLiteralEg`Menu Items <br> SandWich <br> French Fries <br> Potato Wedges <br> Donuts <br> Pizza`;
+
+        //  Lets Try it in Another Way
+
+        var s = String.raw`Menu Items <br> SandWich <br> French Fries <br> Potato Wedges <br> Donuts <br> Pizza`;
+        document.write("<br> <br>" + s);
+    </script>
+
+</body>
+
+</html>
