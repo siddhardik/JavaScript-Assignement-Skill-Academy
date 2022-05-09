@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily🏏Quote🎯Solution</title>
+    <style>
+        .big {
+            /* To centre A text  via parent*/
+            text-align: center;
+        }
+        .but{
+            /* To centre A text  via parent*/
+            text-align: center;
+        }
+        button{
+            width:220px;
+            font-family: monospace;
+            color:rgb(255, 255, 255);
+            border:3px solid rgb(243, 243, 247);
+            background-color: rgb(6, 0, 85);
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .quote{
+            width: 60%;
+            height:27vh;
+            margin:auto;
+            text-align: centre;
+            border: 3px solid green;
+            border-radius:3px;
+        }
+        #line{
+            color: blue;
+        }
+        #author{
+            color:black;
+            text-align: right;
+            padding-left: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="big">Get Your Daily Quote</h2>
+    <div class="quote">
+        <p id="line">Here One Quote will come For You</p>
+     <b id="author">Author's Name</b>
+
+    </div>
+    <div class="but">
+
+        <button onclick="showQuote()"> Click Me to See Today's Quote</button>
+    </div>
+
+    <script>
+        const quote={
+            1:"People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily.",
+            2:"Your time is limited, so don't waste it living someone else's life." ,
+            3:"Everyone lives by selling something.",
+            4: "Challenges are what make life interesting and overcoming them is what makes life meaningful." ,
+            5:"Don't let the fear of losing be greater than the excitement of winning." ,
+            6:"Perseverance is failing 19 times and succeeding the 20th." ,
+            7:"The secret of joy in work is contained in one word -- excellence. To know how to do something well is to enjoy it." ,
+            8:"Obstacles are those frightful things you see when you take your eyes off your goal." ,
+            9: "It is your determination and persistence that will make you a successful person.",
+            10: "Don't ask if your dream is crazy, ask if it's crazy enough."
+            
+        }
+    
+        const author={
+            1:"-Zig Ziglar",
+            2:"-Steve Jobs",
+            3:"-Robert Louis Stevenson",
+            4:"-Joshua J. Marine",
+            5:"-Robert Kiyosaki",
+            6:"-Julie Andrews",
+            7:"-Pearl Buck",
+            8:"-Henry Ford",
+            9:"-Kenneth J Hutchins",
+            10:"-Lena Waithe"
+           }
+           function showQuote(){
+               let z=Math.floor((Math.random()*10)+1);
+               document.getElementById("line").innerHTML=quote[z];
+               document.getElementById("author").innerHTML=author[z];
+            }
+
+        
+    </script>
+</body>
+
+</html>
