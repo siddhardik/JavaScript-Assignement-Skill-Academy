@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function Assignment</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <form action="">
+        <span>Name:</span>
+        <input type="text" id="txtName" />
+        <input type="button" id="btnCheck" value="Submit" onclick="return ValidateTextBox()" />
+    </form>
+
+    <script type="text/javascript">
+        function ValidateTextBox() {
+            if (document.getElementById("txtName").value.trim() == "") {
+                alert("Name must be filled Out!");
+                return false;
+            }
+        };
+    </script>
+
+    
+    
+</body>
+</html>
