@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async_Await Error Promise And Error Handlimg Assignement</title>
+</head>
+<body>
+    <script>
+        var KasamKhayaMaine= new Promise(function (resolve, reject) {
+            const GT = "Aava De!";
+            const Hardik11 = "Aava De!";
+            if (GT === Hardik11) {
+                 resolve(); 
+                }
+            else {
+                reject();
+            }
+        });
+        KasamKhayaMaine.then(function () {
+            console.log('Success, No error found');
+        }
+        ).catch(function () {
+            console.log('Some error has occurred');
+        }
+        );
+    </script>
+</body>
+
+</html>
